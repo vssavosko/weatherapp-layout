@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Weather App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body class="page">
+    <header class="header header_theme_weather">
+        <div class="wrapper">
+            <div class="header__menu header__menu_height">
+                <div class="logo logo_width_200">
+                    <img src="img/logo.png" alt="logo" class="img">
+                </div>
+                <nav class="menu">
+                    <ul class="menu-items">
+                        <li class="menu-items__item"><a href="#" class="link link_display_flex">Home</a></li>
+                        <li class="menu-items__item"><a href="#anchor-features"
+                                class="link link_display_flex">Features</a></li>
+                        <li class="menu-items__item"><a href="#anchor-reviews"
+                                class="link link_display_flex">Reviews</a></li>
+                        <li class="menu-items__item"><a href="#anchor-downloads"
+                                class="link link_display_flex">Downloads</a></li>
+                        <li class="mobile-menu-icon menu-items__item"><i class="fas fa-bars"></i></li>
+                    </ul>
+                </nav>
+                <section class="social-media">
+                    <div class="social-media__facebook">
+                        <a href="#" class="link link_display_flex"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    </div>
+                    <div class="social-media__instagram">
+                        <a href="#" class="link link_display_flex"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                    <div class="social-media__twitter">
+                        <a href="#" class="link link_display_flex"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </section>
+            </div>
+            <div class="mobile-menu">
+            </div>
+            <section class="header__content">
+                <article class="header__text header__text_z-index_1">
+                    <h1 class="h1 header__h1">
+                        Get the most fun<br>weather app
+                    </h1>
+                    <p class="p header__p">
+                        Simple, nice and user-friendly application of the<br>weather. Only
+                        useful information
+                    </p>
+                    <button
+                        class="button header__button_bold header__button_theme_orange header__button_margin-right_3">Download</button>
+                    <button
+                        class="button header__button_bold header__button_theme_blue header__button_margin-left_3">Features</button>
+                </article>
+                <div class="header__img">
+                    <img src="img/phone_img.png" alt="phone" class="img">
+                </div>
+                <div class="arrow-down">
+                    <div
+                        class="circle circle_color_white circle_margin-bottom_5 circle_width-and-height_55 circle_cursor_pointer circle_z-index_2">
+                        <a href="#anchor-features" class="link link_display_flex"><img src="img/arrow-down.png"
+                                alt="arrow-down" class="img"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="section">
+                <section class="section__header" id="anchor-features">
+                    <h2 class="section__h2 section__h2_color_text-blue">PERFECT FEATURES</h2>
+                    <p class="section__p section__p_color_text-grey">Only necessary</p>
+                </section>
+                <div class="section__content">
+                    <div class="section__items">
+                        <div class="section__item">
+                            <img src="img/diamond_ico.png" alt="diamond" class="img item-logo">
+                            <section class="item-content">
+                                <h3 class="item-content__h3 item-content__h3_color_black">Usability</h3>
+                                <p
+                                    class="section__p section__p_color_text-grey section__p_font-weight_normal section__p_line-height">
+                                    Sometimes the simplest things are the hardest to find. So we created a new line for
+                                    everyday life</p>
+                            </section>
+                        </div>
+                        <div class="section__item">
+                            <img src="img/parallax_ico.png" alt="parallax" class="img item-logo">
+                            <section class="item-content">
+                                <h3 class="item-content__h3 item-content__h3_color_black">Parallax Effect</h3>
+                                <p
+                                    class="section__p section__p_color_text-grey section__p_font-weight_normal section__p_line-height">
+                                    Sometimes the simplest things are the hardest to find. So we created a new line for
+                                    everyday life</p>
+                            </section>
+                        </div>
+                        <div class="section__item">
+                            <img src="img/unlimites_ico.png" alt="unlimites" class="img item-logo">
+                            <section class="item-content">
+                                <h3 class="item-content__h3 item-content__h3_color_black">Unlimites Color</h3>
+                                <p
+                                    class="section__p section__p_color_text-grey section__p_font-weight_normal section__p_line-height">
+                                    Sometimes the simplest things are the hardest to find. So we created a new line for
+                                    everyday life</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <section class="section__header">
+                    <h2 class="section__h2 section__h2_color_text-blue">SIMPLE WIDGETS</h2>
+                    <p class="section__p section__p_color_text-grey">Drag and Drop</p>
+                </section>
+                <div class="section__content">
+                    <div class="card card_grid-gap_50 section__items">
+                        <div class="section__item">
+                            <div class="card__item">
+                                <img src="img/card-left.png" alt="card-one" class="img">
+                            </div>
+                        </div>
+                        <div class="section__item section__item_position_absolute">
+                            <div class="card__item card__item_transform_scale">
+                                <img src="img/card-center.png" alt="card-two" class="img">
+                            </div>
+                        </div>
+                        <div class="section__item">
+                            <div class="card__item">
+                                <img src="img/card-right.png" alt="card-third" class="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <section class="section__header">
+                    <h2 class="section__h2 section__h2_color_text-blue">SCREENSHOTS</h2>
+                    <p class="section__p section__p_color_text-grey">The brightest images</p>
+                </section>
+                <div class="section__content">
+                    <div class="screenshots card_grid-gap_50 section__items">
+                        <div class="screenshots__item section__item">
+                            <div class="screenshots__img">
+                                <img src="img/cloudy.png" alt="cloudy" class="img">
+                                <div class="circle-item-one">
+                                    <div class="circle circle_color_yellow">
+                                        <span>Cloudy</span>
+                                    </div>
+                                </div>
+                                <div class="circle-item-two">
+                                    <div class="circle circle_color_blue">
+                                        <span class="circle__text">15°</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="screenshots__content">
+                                <img src="img/cloud-ico.png" alt="cloud" class="img">
+                                <h2 class="section__h2 section__h2_line-height_3 section__h2_color_text-blue">
+                                    WHEN THE CLOUDS
+                                </h2>
+                                <p class="screenshots__p screenshots__p_color_text-indigo">
+                                    Variable information on the air humidity, the feeling of the weather, and
+                                    the ability to share this with your friends
+                                </p>
+                                <div class="bottom-icons">
+                                    <div class="bottom-icons__circle bottom-icons__circle-one">
+                                        <span class="bottom-icons__text">95%</span>
+                                    </div>
+                                    <div class="bottom-icons__circle bottom-icons__circle-two">
+                                        <span class="bottom-icons__text">9°</span>
+                                    </div>
+                                    <div class="bottom-icons__circle bottom-icons__circle-third">
+                                        <span class="bottom-icons__text">Rainy</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="screenshots__item screenshots__item_gtc_500-290 section__item">
+                            <div class="screenshots__img screenshots__img_order_1">
+                                <img src="img/sunny.png" alt="sunny" class="img">
+                                <div class="circle-item-one">
+                                    <div class="circle circle_color_orange">
+                                        <span>Sunny</span>
+                                    </div>
+                                </div>
+                                <div class="circle-item-two">
+                                    <div class="circle circle_color_red">
+                                        <span class="circle__text">35°</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="screenshots__content">
+                                <img src="img/sunny-ico.png" alt="sunny" class="img">
+                                <h2 class="section__h2 section__h2_line-height_3 section__h2_color_text-blue">
+                                    WHEN THE SUN
+                                </h2>
+                                <p class="screenshots__p screenshots__p_color_text-indigo">
+                                    Sometimes the simplest things are the hardest to find. So we created a new line for
+                                    everyday life. Sometimes the simplest
+                                </p>
+                                <div class="bottom-icons">
+                                    <div class="bottom-icons__circle bottom-icons__circle-one">
+                                        <span class="bottom-icons__text">95%</span>
+                                    </div>
+                                    <div class="bottom-icons__circle bottom-icons__circle-two">
+                                        <span class="bottom-icons__text">9°</span>
+                                    </div>
+                                    <div class="bottom-icons__circle bottom-icons__circle-third">
+                                        <span class="bottom-icons__text">Rainy</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="screenshots__item section__item">
+                            <div class="screenshots__img">
+                                <img src="img/rainy.png" alt="rainy" class="img">
+                                <div class="circle-item-one">
+                                    <div class="circle circle_color_freeze">
+                                        <span>Rainy</span>
+                                    </div>
+                                </div>
+                                <div class="circle-item-two">
+                                    <div class="circle circle_color_blue-crystal">
+                                        <span class="circle__text">9°</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="screenshots__content">
+                                <img src="img/rain-ico.png" alt="rain" class="img">
+                                <h2 class="section__h2 section__h2_line-height_3 section__h2_color_text-blue">
+                                    WHEN THE RAIN
+                                </h2>
+                                <p class="screenshots__p screenshots__p_color_text-indigo">
+                                    Sometimes the simplest things are the hardest to find. So we created a new line for
+                                    everyday life. Sometimes the simplest
+                                </p>
+                                <div class="bottom-icons">
+                                    <div class="bottom-icons__circle bottom-icons__circle-one">
+                                        <span class="bottom-icons__text">95%</span>
+                                    </div>
+                                    <div class="bottom-icons__circle bottom-icons__circle-two">
+                                        <span class="bottom-icons__text">9°</span>
+                                    </div>
+                                    <div class="bottom-icons__circle bottom-icons__circle-third">
+                                        <span class="bottom-icons__text">Rainy</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <section class="section__header" id="anchor-reviews">
+                    <h2 class="section__h2 section__h2_color_text-blue">WHAT PEOPLE ARE SAYING</h2>
+                    <p class="section__p section__p_color_text-grey">Reviews</p>
+                </section>
+                <div class="section__content section__content_margin-bottom_10">
+                    <div class="reviews section__items">
+                        <div class="reviews__item section__item">
+                            <img src="img/quote-one.png" alt="quote" class="img">
+                            <p class="reviews__p">What art offers is space - a certain
+                                breathing room for the
+                                spirit.</p>
+                            <span class="reviews__span">John Updike</span>
+                            <img src="img/quote-two.png" alt="quote" class="img reviews__quote">
+                        </div>
+                        <div class="reviews__item section__item">
+                            <img src="img/quote-one.png" alt="quote" class="img">
+                            <p class="reviews__p">
+                                We do not see nature with our eyes, but with our understandings and our hearts.
+                            </p>
+                            <span class="reviews__span">William Hazlitt</span>
+                            <img src="img/quote-two.png" alt="quote" class="img reviews__quote">
+                        </div>
+                        <div class="reviews__item section__item">
+                            <img src="img/quote-one.png" alt="quote" class="img">
+                            <p class="reviews__p">
+                                The only courage that matters is the kind that gets you from one moment to the next.
+                            </p>
+                            <span class="reviews__span">Mignon McLaughlin</span>
+                            <img src="img/quote-two.png" alt="quote" class="img reviews__quote">
+                        </div>
+                        <div class="reviews__item section__item">
+                            <img src="img/quote-one.png" alt="quote" class="img">
+                            <p class="reviews__p">
+                                No man has a good enough memory to be a successful liar.
+                            </p>
+                            <span class="reviews__span">Abraham Lincoln</span>
+                            <img src="img/quote-two.png" alt="quote" class="img reviews__quote">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <section class="section section_theme_download-app">
+            <div class="wrapper">
+                <section class="section__content section__content_display_grid">
+                    <h2 class="section__h2" id="anchor-downloads">HOW DOWNLOAD THE APP?</h2>
+                    <p
+                        class="section__p section__p_font-weight_normal section__p_width_320 section__p_margin-top_0 section__p_display_flex">
+                        Just download the app from the store.
+                        Simple, nice and user-friendly application of theweather. Only relevant and useful information.
+                    </p>
+                    <div class="store-icons">
+                        <img src="img/app-store-ico.png" alt="App Store" class="img img__app-store">
+                        <img src="img/google-play-ico.png" alt="Google Play" class="img img__google-play">
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="footer-menu section">
+            <div class="wrapper">
+                <div class="footer-menu__menu footer-menu__menu_height">
+                    <div class="logo logo_width_200">
+                        <img src="img/footer-logo.png" alt="footer-logo" class="img">
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu-items">
+                            <li class="menu-items__item"><a href="#"
+                                    class="link link_color_gray link_display_flex">Home</a></li>
+                            <li class="menu-items__item"><a href="#anchor-features"
+                                    class="link link_color_gray link_display_flex">Features</a></li>
+                            <li class="menu-items__item"><a href="#anchor-reviews"
+                                    class="link link_color_gray link_display_flex">Reviews</a></li>
+                            <li class="menu-items__item"><a href="#anchor-downloads"
+                                    class="link link_color_gray link_display_flex">Downloads</a></li>
+                        </ul>
+                    </nav>
+                    <section class="social-media">
+                        <div class="social-media__facebook">
+                            <a href="#" class="link link_color_gray link_display_flex"><i
+                                    class="fab fa-facebook-f fa-lg"></i></a>
+                        </div>
+                        <div class="social-media__instagram">
+                            <a href="#" class="link link_color_gray link_display_flex"><i
+                                    class="fab fa-instagram fa-lg"></i></a>
+                        </div>
+                        <div class="social-media__twitter">
+                            <a href="#" class="link link_color_gray link_display_flex"><i
+                                    class="fab fa-twitter fa-lg"></i></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <p class="p copyright__p">© 2016 All rights reserved. Weather App Theme by Gravpix</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src='js/common.js'></script>
+</body>
+
+</html>

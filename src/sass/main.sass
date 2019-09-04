@@ -1,0 +1,849 @@
+$mainColor: white
+$orangeColor: #fc6a42
+$blueColor: #4466c9
+$blueColorText: #648cff
+$greyColorText: #b9b9b9
+$blackColorText: black
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+.page 
+    font-family: 'Ubuntu', sans-serif
+    font-size: 16px
+    color: $mainColor
+    background-color: $mainColor
+
+::-webkit-scrollbar
+    width: 5px
+
+::-webkit-scrollbar-track
+    background-color: white
+
+::-webkit-scrollbar-thumb
+    border-radius: 20px
+    box-shadow: inset 0 0 20px $blueColorText
+
+/* HEADER */
+.header
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.header_theme_weather
+    background-image: url('/img/background.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+.wrapper
+    width: 100%
+    max-width: 1190px
+    padding: 0 20px
+
+.header__menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.header__menu_height
+    height: 90px
+
+.logo
+    display: flex
+    min-width: 110px
+    height: 100%
+    align-items: center
+    justify-content: center
+
+.logo_width_200
+    width: 200px
+
+.img
+    max-width: 100%
+
+.menu
+    width: 590px
+    height: 100%
+
+.menu_display_flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+.menu_width_100
+    width: 100%
+
+.menu-items
+    display: flex
+    height: 100%
+    padding: 0 20px
+    align-items: center
+    justify-content: space-between
+    list-style: none
+
+.menu-items_display_block
+    display: block
+
+.menu-items_height_auto
+    height: auto
+
+.menu-items__item
+    display: flex
+    height: 100%
+    align-items: center
+    justify-content: space-between
+    font-size: 1rem
+    cursor: pointer
+
+.menu-items__item_display_block
+    display: block
+    text-align: center
+
+.menu-items__item_line-height_5
+    line-height: 5
+
+.menu-items__item_display_block
+    display: block
+
+.link
+    text-decoration: none
+    color: $mainColor
+    transition: .4s
+
+.link:hover
+    color: $orangeColor
+    transition: .4s
+
+.social-media
+    display: flex
+    width: 120px
+    height: 100%
+    align-items: center
+    justify-content: space-between
+
+%social__items
+    display: flex
+    align-items: center
+    height: 100%
+
+%cursor_pointer
+    cursor: pointer
+
+.social-media__facebook
+    @extend %social__items
+
+.fa-facebook-f
+    @extend %cursor_pointer
+
+.social-media__instagram
+    @extend %social__items
+
+.fa-instagram
+    @extend %cursor_pointer
+
+.social-media__twitter
+    @extend %social__items
+
+.fa-twitter
+    @extend %cursor_pointer
+
+.mobile-menu
+    display: none
+
+.header__content
+    position: relative
+    display: flex
+    width: 100%
+
+.header__text
+    width: 50%
+    margin-top: 15%
+
+.header__text_z-index_1
+    z-index: 1
+
+.h1
+    font-size: 4rem
+    font-weight: bold
+
+.header__h1
+    margin-bottom: 30px
+
+.p
+    font-size: 1rem
+    line-height: 1.5
+    font-weight: normal
+
+.header__p
+    margin-bottom: 30px
+
+.button
+    font-size: 1rem
+    padding: 12px 30px
+    border: 0
+    border-radius: 7px
+    cursor: pointer
+
+.header__button_bold
+    font-weight: bold
+
+.header__button_theme_orange
+    color: $mainColor
+    background-color: $orangeColor
+    transition: .5s
+
+    @at-root &:hover
+        box-shadow: 0 0 10px 0 #fc420c
+        transition: .4s
+
+.header__button_theme_blue
+    color: $mainColor
+    background-color: $blueColor
+    transition: .5s
+
+    @at-root &:hover
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4)
+        transition: .4s
+
+.header__button_margin-right_3
+    margin-right: 3px
+
+.header__button_margin-left_3
+    margin-left: 3px
+
+.header__img
+    width: 50%
+    text-align: center
+    margin:
+        top: 10%
+        bottom: 5%
+
+.arrow-down
+    position: absolute
+    display: flex
+    width: 100%
+    height: 100%
+    justify-content: center
+    align-items: flex-end
+
+.link_display_flex
+    display: flex
+    width: 100%
+    height: 100%
+    justify-content: center
+    align-items: center
+/* HEADER_END */
+
+/* MAIN */
+.main
+    @extend .header
+    flex-wrap: wrap
+
+.section__header
+    text-align: center
+    margin:
+        top: 10%
+        bottom: 10%
+
+.section__h2
+    font-size: 2rem
+    font-weight: bold
+
+.section__h2_color_text-blue
+    color: $blueColorText
+
+.section__p
+    font-weight: bold
+    margin:
+        top: 2%
+
+.section__p_color_text-grey
+    color: $greyColorText
+
+.section__content
+    display: flex
+    justify-content: center
+
+.section__items
+    display: grid
+    width: 100%
+    justify-content: center
+    grid-template-columns: repeat(auto-fit, minmax(200px, 380px))
+    grid-gap: 5px
+
+.section__item
+    display: flex
+    justify-content: center
+
+.item-logo
+    padding: 5px 20px
+    height: 70px
+
+.item-content__h3 
+    font-size: 1.5rem
+    margin:
+        bottom: 6%
+
+.item-content__h3_color_black
+    color: $blackColorText
+
+.section__p_font-weight_normal
+    font-weight: normal
+
+.section__p_line-height
+    line-height: 1.5
+
+.card
+    grid-template-columns: repeat(2, 480px)
+
+.card__item
+    width: 100%
+    max-width: 318px
+    background-color: $mainColor
+    box-shadow: 0 25px 25px 0 #e0e0e0
+
+.section__item_position_absolute
+    position: absolute
+    width: 100%
+    max-width: 1150px
+
+.card__item_transform_scale
+    transform: scale(1.18, 1.18)
+
+.screenshots
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(3, 1fr)
+    grid-gap: 150px
+
+.screenshots__item
+    display: grid
+    grid-template-columns: 290px 500px
+    grid-gap: 150px
+
+.screenshots__img
+    position: relative
+    display: flex
+    width: 100%
+    min-width: 290px
+    justify-content: center
+
+.circle-item-one
+    position: absolute
+    top: 190px
+    left: 245px
+
+.circle-item-two
+    position: absolute
+    top: 380px
+    right: 265px
+
+.circle
+    display: flex
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    justify-content: center
+    align-items: center
+
+.circle_margin-bottom_5
+    margin-bottom: 5%
+
+.circle_width-and-height_55
+    width: 55px
+    height: 55px
+
+.circle_cursor_pointer
+    @extend %cursore-pointer
+
+.circle_z-index_2
+    z-index: 2
+
+.circle_color_yellow
+    background-color: #fcec64
+
+.circle_color_blue
+    background-color: #6ca3ff
+
+.circle__text
+    font-size: 1.5rem
+    font-weight: bold
+
+.screenshots__content
+    padding-top: 18%
+
+.section__h2_line-height_3
+    line-height: 3
+
+.screenshots__p
+    width: 80%
+    font-size: 1.2rem
+    line-height: 1.5
+    margin-bottom: 10%
+
+.screenshots__p_color_text-indigo
+    color: #353854
+
+.bottom-icons
+    display: flex
+
+.bottom-icons__circle
+    display: flex
+    border-radius: 50%
+    justify-content: center
+    align-items: center
+    width: 47px
+    height: 47px
+    font-size: .85rem
+    background-color: #fff
+    box-shadow: 0px 0 25px 0px rgba(0, 0, 0, .05)
+
+.bottom-icons__circle-one
+    z-index: 3
+
+.bottom-icons__circle-two
+    position: relative
+    right: 10px
+    z-index: 2
+
+.bottom-icons__circle-third
+    position: relative
+    right: 20px
+    z-index: 1
+
+.bottom-icons__text
+    color: #d4dcec
+    font-weight: bold
+
+.screenshots__item_gtc_500-290
+    grid-template-columns: 500px 290px
+
+.screenshots__img_order_1
+    order: 1
+
+.circle_color_orange
+    background-color: #f2a14e
+
+.circle_color_red
+    background-color: #fc6a42
+
+.circle_color_freeze
+    background-color: #b8faee
+
+.circle_color_blue-crystal
+    background-color: #7693c8
+
+.circle_color_white
+    background-color: $mainColor
+    transition: .4s
+
+.circle_color_white:hover
+    background-color: #5b81ec
+    border: 1px solid #fc6a42
+    transition: .4s
+
+.reviews
+    grid-template-columns: repeat(auto-fit, minmax(200px, 445px))
+    grid-gap: 50px
+
+.reviews__item 
+    display: grid
+    grid-template-columns: 1fr
+    grid-gap: 15px
+
+.reviews__p
+    font-size: 1.2rem
+    color: $blackColorText
+
+.reviews__span
+    font-size: .9rem
+    color: $blackColorText
+
+.reviews__quote
+    justify-self: right
+
+.section__content_margin-bottom_10
+    margin-bottom: 10%
+/* MAIN_END */
+
+/* FOOTER */
+.footer
+    @extend .header
+
+.section_theme_download-app
+    display: flex
+    width: 100%
+    height: 460px
+    justify-content: center
+    align-items: center
+    background-image: url('/img/download-app-bg.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+.section__content_display_grid
+    display: grid
+    grid-template-columns: 1fr
+    grid-gap: 30px
+
+.section__p_width_320
+    width: 100%
+    max-width: 320px
+
+.section__p_margin-top_0
+    margin-top: 0
+
+.store-icons
+    display: grid
+    grid-template-columns: 147px 139px
+    grid-gap: 5px
+
+%cursore-pointer
+    cursor: pointer
+
+.img__app-store
+    @extend %cursore-pointer
+
+.img__google-play
+    @extend %cursore-pointer
+
+.footer-menu
+    display: flex
+    width: 100%
+    justify-content: center
+    background-color: #353854
+    flex-wrap: wrap
+
+.footer-menu__menu
+    @extend .header__menu
+
+.footer-menu__menu_height
+    height: 170px
+
+.link_color_gray
+    color: #b5b5c8
+
+.link_color_gray:hover
+    color: $mainColor
+
+.hr
+    @extend .wrapper
+    max-width: 1600px
+    border-top: 1px solid #434769
+
+.copyright
+    display: flex
+    width: 100%
+    height: 100px
+    justify-content: center
+    align-items: center
+
+.copyright__p
+    text-align: right
+    color: #565b87
+/* FOOTER_END */
+
+/* MEDIA */
+/* Large desktops and laptops */
+@media screen and (min-width: 1200px)
+    .mobile-menu-icon
+        display: none
+
+@media screen and (min-width: 992px) and (max-width: 1199px)
+    .mobile-menu-icon
+        display: none
+
+    .section__items
+        grid-template-columns: 500px
+        grid-gap: 30px
+
+    .section__item_position_absolute
+        position: static
+        max-width: none
+
+    .card_grid-gap_50
+        grid-gap: 50px
+
+    .card__item_transform_scale
+        transform: none
+
+    .screenshots
+        grid-template-columns: 305px
+
+    .screenshots__item
+        grid-template-columns: none
+        grid-gap: 0
+        text-align: center
+
+    .screenshots__content
+        padding-top: 12%
+
+    .circle-item-one 
+        left: 250px
+
+    .screenshots__p
+        width: 100%
+
+    .bottom-icons
+        justify-content: center
+
+    .bottom-icons__circle-one
+        position: relative
+        left: 10px
+
+    .bottom-icons__circle-two
+        right: 0px
+
+    .bottom-icons__circle-third
+        right: 10px
+
+    .screenshots__img_order_1
+        order: 0
+
+    .section__content_display_grid
+        text-align: center
+
+    .section__p_display_flex
+        display: flex
+        justify-self: center
+
+    .store-icons
+        justify-content: center
+
+/* Portrait tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 991px)
+    .mobile-menu-icon
+        display: none
+
+    .h1
+        font-size: 2.8rem
+
+    .section__items
+        grid-template-columns: 500px
+        grid-gap: 30px
+
+    .section__item_position_absolute
+        position: static
+        max-width: none
+
+    .card_grid-gap_50
+        grid-gap: 50px
+
+    .card__item_transform_scale
+        transform: none
+
+    .screenshots
+        grid-template-columns: 305px
+
+    .screenshots__item
+        grid-template-columns: none
+        grid-gap: 0
+        text-align: center
+
+    .screenshots__content
+        padding-top: 12%
+
+    .circle-item-one 
+        left: 250px
+
+    .screenshots__p
+        width: 100%
+
+    .bottom-icons
+        justify-content: center
+
+    .bottom-icons__circle-one
+        position: relative
+        left: 10px
+
+    .bottom-icons__circle-two
+        right: 0px
+
+    .bottom-icons__circle-third
+        right: 10px
+
+    .screenshots__img_order_1
+        order: 0
+
+    .section__content_display_grid
+        text-align: center
+
+    .section__p_display_flex
+        display: flex
+        justify-self: center
+
+    .store-icons
+        justify-content: center
+
+@media screen and (max-width: 768px)
+    .menu-items
+        justify-content: flex-end
+
+    .mobile-menu-icon
+        display: flex
+
+    .section__h2 
+        font-size: 1.5rem
+
+    .section__items
+        grid-gap: 30px
+
+    .item-content__h3
+        font-size: 1.2rem
+
+    .card
+        grid-template-columns: none
+
+    .card_grid-gap_50
+        grid-gap: 50px
+
+    .section__item_position_absolute
+        position: static
+        max-width: none
+
+    .card__item_transform_scale
+        transform: none
+
+    .screenshots
+        grid-template-columns: 290px
+
+    .screenshots__item
+        grid-template-columns: none
+        grid-gap: 0
+        text-align: center
+
+    .screenshots__content
+        padding-top: 12%
+
+    .screenshots__p
+        width: 100%
+
+    .bottom-icons
+        justify-content: center
+
+    .bottom-icons__circle-one
+        position: relative
+        left: 10px
+
+    .bottom-icons__circle-two
+        right: 0px
+
+    .bottom-icons__circle-third
+        right: 10px
+
+    .screenshots__img_order_1
+        order: 0
+
+    .section__content_display_grid
+        text-align: center
+
+    .section__p_display_flex
+        display: flex
+        justify-self: center
+
+    .store-icons
+        justify-content: center
+
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 767px)
+    .h1
+        font-size: 2rem
+
+    .p
+        font-size: .8rem
+
+@media screen and (max-width: 650px)
+    .header__content
+        flex-wrap: wrap
+        text-align: center
+    
+    .header__text
+        width: 100%
+        order: 0
+        margin: 10% 0
+
+    .header__img
+        width: 100%
+        margin-top: 0
+
+    .p
+        font-size: 1rem
+
+    .button
+        font-size: 1rem
+        padding: 12px 25px
+
+    %margin-icons
+        margin-right: 10px
+
+    .social-media__facebook
+        @extend %margin-icons
+
+    .social-media__instagram
+        @extend %margin-icons
+
+/* Landscape phones and smaller */
+@media screen and (max-width: 480px)
+    .header__h1
+        margin-bottom: 15px
+
+    .header__p
+        margin-bottom: 15px
+
+    .header__img
+        margin-top: 3%
+
+    .section__header
+        margin-top: 15%
+        margin-bottom: 15%
+
+    .item-logo
+        height: 50px
+
+    .circle-item-one
+        left: 255px
+
+    .circle 
+        width: 60px
+        height: 60px
+
+    .screenshots__p
+        font-size: 1rem
+
+    .reviews__p
+        font-size: 1rem
+
+    .reviews__span
+        font-size: .8rem
+
+    .circle_width-and-height_55
+        width: 45px
+        height: 45px
+
+@media screen and (max-width: 385px)
+    .header__button_margin-left_3
+        margin-left: 0
+
+    .header__button_margin-right_3
+        margin-right: 0 
+    
+    .item-logo
+        padding: 5px 10px
+        height: 35px
+
+    .circle-item-one
+        left: 230px
+
+    .circle-item-two
+        right: 229px
+
+    .circle_width-and-height_55
+        width: 35px
+        height: 35px
+
+@media screen and (min-width: 300px) and (max-width: 768px)
+    .header__menu .menu-items .menu-items__item:not(.mobile-menu-icon)
+        display: none
+/* MEDIA_END */
